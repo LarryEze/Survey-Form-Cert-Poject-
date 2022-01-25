@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Larry Survey Form</title>
+  </head>
+
+  <body class="container">
+    <header class="header text-center">
+      <h1 id="title">Survey Form</h1>
+
+      <h2 id="description">Please fill this form to enter our Database</h2>
+    </header>
+
+    <main>
+      <form method="POST" action="#" id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            id="number"
+            name="age"
+            class="form-control"
+            placeholder="Age"
+            min="15"
+            max="85"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="marital-status">What is your Marital status?</label>
+          <select
+            id="marital-status"
+            name="marital-status"
+            class="form-control"
+            required
+          >
+            <option disabled selected>Select current status</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="complicated">Complicated</option>
+            <option value="divorced">Divorced</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <label>What's your sex</label>
+        <div id="radio">
+          <label for="male">
+            <input
+              id="male"
+              type="radio"
+              name="male-female"
+              value="male"
+              class="input-radio"
+            />
+            Male </label
+          ><br />
+
+          <label for="female">
+            <input
+              id="female"
+              type="radio"
+              name="male-female"
+              value="female"
+              class="input-radio"
+            />
+            Female </label
+          ><br />
+        </div>
+
+        <label>How would you describe your personality</label>
+        <div id="checkbox">
+          <label for="introvert">
+            <input
+              id="introvert"
+              type="checkbox"
+              name="personality"
+              value="introvert"
+              class="input-checkbox"
+            />
+            Introvert </label
+          ><br />
+
+          <label for="bivert">
+            <input
+              id="bivert"
+              type="checkbox"
+              name="personality"
+              value="bivert"
+              class="input-checkbox"
+            />
+            Bi-vert </label
+          ><br />
+
+          <label for="extrovert">
+            <input
+              id="extrovert"
+              type="checkbox"
+              name="personality"
+              value="extrovert"
+              class="input-checkbox"
+            />
+            Extrovert </label
+          ><br />
+
+          <label for="melacholic">
+            <input
+              id="melacholic"
+              type="checkbox"
+              name="personality"
+              value="melacholic"
+              class="input-checkbox"
+            />
+            Melacholic </label
+          ><br />
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments / Suggestions?</label>
+          <textarea
+            id="comments"
+            placeholder="For comments and suggestions..."
+            class="input-textarea"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </form>
+
+      <h3 class="text-center">Thank you for your time!!!</h3>
+    </main>
+
+    <footer class="text-center">&copy; <s>Copyright Larry</s></footer>
+  </body>
+</html>
